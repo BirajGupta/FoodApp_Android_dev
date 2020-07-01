@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4c8c4a"
+    tools:context=".Activity.OtpVerificationActivity">
+
+    <TextView
+        android:id="@+id/txtOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="@string/enter_the_received_otp_below"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@id/txtOtp"
+        android:hint="Enter OTP received on Email"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/etNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Enter New Password"
+        android:layout_below="@id/etOtp"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/etConfirmNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Confirm password"
+        android:layout_below="@id/etNewPassword"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>cack
+    <Button
+        android:id="@+id/btnSubmit"
+        android:background="#ff6f00"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:layout_below="@id/etConfirmNewPassword"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+
+
+
+</RelativeLayout>

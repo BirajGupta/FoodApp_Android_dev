@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/txtHistoryResName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/res_name"
+        android:paddingTop="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingStart="25dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="0dp"/>
+
+    <TextView
+        android:id="@+id/txtHistoryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:layout_toEndOf="@+id/txtHistoryResName"
+        android:paddingTop="20dp"
+        android:paddingEnd="25dp"
+        android:paddingStart="0dp"
+        android:gravity="end"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="@string/date"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHistoryDate" />
+
+
+</RelativeLayout>

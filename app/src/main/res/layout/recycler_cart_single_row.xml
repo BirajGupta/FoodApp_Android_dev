@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dashFoodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_"
+        android:textSize="30sp"
+        android:textColor="#4c8c4a"
+        android:textStyle="bold"
+        android:gravity="top"
+        android:layout_marginStart="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/txtFoodItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/dashFoodItem"
+        android:text="food Name"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/txtFoodItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.200"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

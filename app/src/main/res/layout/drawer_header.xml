@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="#4c8c4a"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/imgLauncher"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/txtTag"
+        android:layout_below="@id/imgLauncher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Order Navigation"
+        android:textSize="23sp"
+
+        android:gravity="center"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

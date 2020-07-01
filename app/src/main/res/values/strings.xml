@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Food_Ordering_App</string>
+    <string name="preferences_file_name">Food Order</string>
+    <string name="register">Register</string>
+    <string name="enter_registered_mobile_number_and_email_below">Enter registered mobile number and email below</string>
+    <string name="mobile_number_10_digits">Mobile Number (10 digits)</string>
+    <string name="email_address">Email Address</string>
+    <string name="next">Next</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_sign_up_now">Don\'t have an account? Sign up now</string>
+    <string name="foodrunner">FoodRunner!</string>
+    <string name="name_min_3_charactes">Name (Min 3 charactes)</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="password_min_4_characters">Password (Min 4 characters)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="favourite_restaurants">Favourite Restaurants</string>
+    <string name="faqs">FAQs</string>
+    <string name="log_out">Log out</string>
+    <string name="opendrawer">open drawer</string>
+    <string name="closedrawer">close drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sort">sort</string>
+    <string name="name">name</string>
+    <string name="enter_the_received_otp_below">Enter the received otp below</string>
+    <string name="submit">Submit</string>
+    <string name="resaturant_name">resaturant name</string>
+    <string name="ordering_from">Ordering From:</string>
+    <string name="your_previous_orders_are_listed_below">Your previous orders are listed below:</string>
+    <string name="res_name">Res Name</string>
+    <string name="date">date</string>
+    <string name="choose_from_menu_listed_below">Choose from menu listed below</string>
+    <string name="proceed_to_cart">Proceed to Cart</string>
+    <string name="remove">REMOVE</string>
+    <string name="add">ADD</string>
+    <string name="your_order_has_been_successfully_placed">Your order has been successfully placed</string>
+    <string name="ok">OK</string>
+    <string name="list_item">list item</string>
+    <string name="rs_200_person">Rs.200/Person</string>
+</resources>

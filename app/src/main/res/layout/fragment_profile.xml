@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/llProfile"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_newprofile_foreground"
+            android:background="#4c8c4a"
+            />
+
+
+    <TextView
+        android:id="@+id/txtProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/name"
+        android:background="#fff"
+        android:padding="15dp"
+        android:paddingTop="0dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtProfileNumber"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_number"
+        android:background="#fff"
+        android:padding="15dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtProfileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email_address"
+        android:background="#fff"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtProfileAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery_address"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:padding="15dp"
+        android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

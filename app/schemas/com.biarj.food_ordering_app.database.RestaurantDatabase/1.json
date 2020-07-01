@@ -1,0 +1,84 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "6cf1ef2fb6b45e8b3fc15a8bbdc3d890",
+    "entities": [
+      {
+        "tableName": "Restaurants",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`res_id` INTEGER NOT NULL, `resName` TEXT NOT NULL, `resPrice` TEXT NOT NULL, `resRating` TEXT NOT NULL, `resImage` TEXT NOT NULL, PRIMARY KEY(`res_id`))",
+        "fields": [
+          {
+            "fieldPath": "res_id",
+            "columnName": "res_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resName",
+            "columnName": "resName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resPrice",
+            "columnName": "resPrice",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resRating",
+            "columnName": "resRating",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resImage",
+            "columnName": "resImage",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "res_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "FavUserRes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`res_id` TEXT NOT NULL, `userId` TEXT NOT NULL, PRIMARY KEY(`res_id`))",
+        "fields": [
+          {
+            "fieldPath": "res_id",
+            "columnName": "res_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "user_id",
+            "columnName": "userId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "res_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '6cf1ef2fb6b45e8b3fc15a8bbdc3d890')"
+    ]
+  }
+}
