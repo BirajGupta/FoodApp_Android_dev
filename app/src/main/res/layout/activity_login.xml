@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.LoginActivity"
-    android:background="#4c8c4a">
+    android:background="#4c8c4a"
+    tools:context=".Activity.LoginActivity">
 
     <RelativeLayout
         android:id="@+id/loginMainPage"
@@ -18,50 +18,54 @@
             android:id="@+id/imgLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_foreground"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:layout_marginBottom="25dp"/>
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/etMobileNumber"
+            android:id="@+id/etMobileNumberlayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
+            android:layout_below="@id/imgLogo"
             android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
             android:hint="@string/mobile_number"
             android:inputType="phone"
-            android:maxLength="10"
-            android:layout_below="@id/imgLogo"
-            android:background="#ffffff">
+            android:maxLength="10">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMobileNumber"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="15sp"
-                android:padding="10dp"
+
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/etPassword"
+
+            android:id="@+id/etPasswordLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
+            android:layout_below="@id/etMobileNumberlayout"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffff"
             android:hint="@string/password"
             android:inputType="numberPassword"
-            android:maxLength="10"
-            android:layout_below="@id/etMobileNumber"
-            android:background="#ffffff"
-            android:layout_marginTop="15dp">
+            android:maxLength="10">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="15sp"
-                android:padding="10dp"
+
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,38 +74,37 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/etPassword"
-            android:text="@string/login"
-            android:layout_marginBottom="10dp"
+            android:layout_below="@id/etPasswordLayout"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            android:padding="10dp"
-            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             android:background="#ff6f00"
-            android:textStyle="bold"/>
+            android:padding="10dp"
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtForgotPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/btnLogin"
-            android:text="@string/forgot_password"
             android:gravity="center"
-            android:textSize="15sp"
-            android:textColor="#ffffff"/>
+            android:text="@string/forgot_password"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/txtSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:textSize="15sp"
+            android:layout_margin="15dp"
             android:gravity="center"
             android:text="@string/don_t_have_an_account_sign_up_now"
-            android:layout_margin="15dp"
-            android:textColor="#ffffff"/>
-
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
 
 
     </RelativeLayout>
@@ -117,20 +120,18 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
-        android:minHeight="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        app:layout_scrollFlags="scroll|enterAlways"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:layout_scrollFlags="scroll|enterAlways" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
 
 
 </RelativeLayout>

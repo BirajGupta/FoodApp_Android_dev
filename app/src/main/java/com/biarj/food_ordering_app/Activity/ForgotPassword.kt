@@ -10,21 +10,18 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.biarj.food_ordering_app.R
+import com.google.android.material.button.MaterialButton
+import kotlinx.android.synthetic.main.activity_forgot_password.*
 import org.json.JSONException
 import org.json.JSONObject
 
 class ForgotPassword : AppCompatActivity() {
 
-    lateinit var etInfoMobileNumber: EditText
-    lateinit var etInfoEmail :EditText
-    lateinit var btnNext: Button
+    lateinit var btnNext: MaterialButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
-
-        etInfoMobileNumber = findViewById(R.id.etInfoMobileNumber)
-        etInfoEmail = findViewById(R.id.etInfoEmail)
         btnNext = findViewById(R.id.btnNext)
 
 
@@ -54,8 +51,9 @@ class ForgotPassword : AppCompatActivity() {
                             if (success) {
 
 
-                                val intent = Intent(this@ForgotPassword, OtpVerificationActivity::class.java)
-                                intent.putExtra("mobileNumber",mobileNumber)
+                                val intent =
+                                    Intent(this@ForgotPassword, OtpVerificationActivity::class.java)
+                                intent.putExtra("mobileNumber", mobileNumber)
                                 startActivity(intent)
                                 finish()
 

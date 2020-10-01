@@ -9,7 +9,7 @@
     android:background="#4c8c4a">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etRegistrationName"
+        android:id="@+id/etRegistrationNameLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,6 +21,7 @@
         android:background="#ffffff">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="15sp"
@@ -30,7 +31,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/etRegistrationEmail"
+    android:id="@+id/etRegistrationEmailLayout"
     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -41,6 +42,7 @@
     android:background="#ffffff">
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etRegistrationEmail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="15sp"
@@ -50,7 +52,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etRegistrationNumber"
+        android:id="@+id/etRegistrationNumberLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,6 +64,7 @@
         android:background="#ffffff">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationNumber"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="15sp"
@@ -71,7 +74,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etRegistrationAddress"
+        android:id="@+id/etRegistrationAddressLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,6 +85,7 @@
         android:background="#ffffff">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationAddress"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="15sp"
@@ -91,7 +95,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etRegistrationPassword"
+        android:id="@+id/etRegistrationPasswordLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,6 +107,7 @@
         android:background="#ffffff">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="15sp"
@@ -112,7 +117,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etRegistrationConfirmPassword"
+        android:id="@+id/etRegistrationConfirmPasswordLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -124,6 +129,7 @@
         android:background="#ffffff">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="15sp"

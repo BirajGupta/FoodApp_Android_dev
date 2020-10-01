@@ -11,89 +11,87 @@
         android:id="@+id/txtOtp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textSize="20sp"
-        android:text="@string/enter_the_received_otp_below"
         android:layout_margin="30dp"
+        android:gravity="center"
         android:padding="10dp"
-        android:gravity="center"/>
+        android:text="@string/enter_the_received_otp_below"
+        android:textColor="#fff"
+        android:textSize="20sp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etOtp"
+        android:id="@+id/etOtpLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:inputType="text"
-        android:maxLength="10"
-        android:gravity="center"
         android:layout_below="@id/txtOtp"
-        android:background="#ffffff">
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:inputType="text"
+        android:maxLength="10">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="15sp"
-        android:padding="10dp"
-        android:hint="@string/enter_otp_received_on_email"
-        />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etOtp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/enter_otp_received_on_email"
+            android:padding="10dp"
+            android:textSize="15sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etNewPassword"
+        android:id="@+id/etNewPasswordLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/etOtpLayout"
         android:layout_margin="10dp"
-        android:inputType="text"
-        android:maxLength="10"
+        android:background="#ffffff"
         android:gravity="center"
-        android:layout_below="@id/etOtp"
-        android:background="#ffffff">
+        android:inputType="text"
+        android:maxLength="10">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNewPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="15sp"
-            android:padding="10dp"
             android:hint="@string/enter_new_password"
-            />
+            android:padding="10dp"
+            android:textSize="15sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etConfirmNewPassword"
+        android:id="@+id/etConfirmNewPasswordLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/etNewPasswordLayout"
         android:layout_margin="10dp"
-        android:inputType="text"
-        android:maxLength="10"
+        android:background="#ffffff"
         android:gravity="center"
-        android:layout_below="@id/etNewPassword"
-        android:background="#ffffff">
+        android:inputType="text"
+        android:maxLength="10">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etConfirmNewPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="15sp"
-            android:padding="10dp"
             android:hint="@string/confirm_password1"
-            />
+            android:padding="10dp"
+            android:textSize="15sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSubmit"
-        android:background="#ff6f00"
-        android:textColor="#fff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/etConfirmNewPasswordLayout"
+        android:layout_margin="10dp"
+        android:background="#ff6f00"
+        android:padding="10dp"
         android:text="@string/submit"
         android:textAllCaps="false"
-        android:layout_below="@id/etConfirmNewPassword"
-        android:layout_margin="10dp"
-        android:padding="10dp"/>
-
-
+        android:textColor="#fff" />
 
 
 </RelativeLayout>

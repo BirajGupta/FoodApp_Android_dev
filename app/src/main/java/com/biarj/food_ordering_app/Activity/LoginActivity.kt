@@ -11,33 +11,30 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.biarj.food_ordering_app.R
+import com.google.android.material.button.MaterialButton
+import kotlinx.android.synthetic.main.activity_login.*
 import org.json.JSONException
 import org.json.JSONObject
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var btnlogin: Button
-    lateinit var etMobileNumber : EditText
-    lateinit var etPassword: EditText
-    lateinit var txtForgotPassword: TextView
-    lateinit var txtSignUp: TextView
-    lateinit var coordinatorLayout : CoordinatorLayout
+    lateinit var btnlogin: MaterialButton
 
-    lateinit var sharedPreferences : SharedPreferences
+    lateinit var coordinatorLayout: CoordinatorLayout
+
+    lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        sharedPreferences = getSharedPreferences(getString(R.string.preferences_file_name),Context.MODE_PRIVATE)
+        sharedPreferences =
+            getSharedPreferences(getString(R.string.preferences_file_name), Context.MODE_PRIVATE)
 
         setContentView(R.layout.activity_login)
 
         btnlogin = findViewById(R.id.btnLogin)
-        txtForgotPassword = findViewById(R.id.txtForgotPassword)
-        txtSignUp = findViewById(R.id.txtSignUp)
-        etMobileNumber = findViewById(R.id.etMobileNumber)
-        etPassword = findViewById(R.id.etPassword)
-        coordinatorLayout =findViewById(R.id.loginCoordinatorLayout)
+
+        coordinatorLayout = findViewById(R.id.loginCoordinatorLayout)
 
 
         val queue = Volley.newRequestQueue(this@LoginActivity)
@@ -47,12 +44,12 @@ class LoginActivity : AppCompatActivity() {
         val jsonParams = JSONObject()
 
 
-        btnlogin.setOnClickListener{
+        btnLogin.setOnClickListener {
 
             val mobileNumber = etMobileNumber.text.toString()
             val password = etPassword.text.toString()
 
-            if(password != "" && mobileNumber != "") {
+            if (password != "" && mobileNumber != "") {
 
                 jsonParams.put("mobile_number", mobileNumber)
                 jsonParams.put("password", password)
@@ -130,29 +127,34 @@ class LoginActivity : AppCompatActivity() {
                             }
                         }
                     queue.add(jsonObjectRequest)
-                }else{
+                } else {
 
-                    Toast.makeText(this@LoginActivity,"Password should have a minimum length of 4 numbers",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@LoginActivity,
+                        "Password should have a minimum length of 4 numbers",
+                        Toast.LENGTH_SHORT
+                    ).show()
 
                 }
-            }
-            else{
+            } else {
                 Toast.makeText(this@LoginActivity, "Enter credentials", Toast.LENGTH_SHORT).show()
 
             }
         }
 
-        txtForgotPassword.setOnClickListener{
+        txtForgotPassword.setOnClickListener {
 
             val intent = Intent(this@LoginActivity, ForgotPassword::class.java)
             startActivity(intent)
 
         }
 
-        txtSignUp.setOnClickListener{
+        txtSignUp.setOnClickListener {
 
-           val intent = Intent(this@LoginActivity,
-               Registration::class.java)
+            val intent = Intent(
+                this@LoginActivity,
+                Registration::class.java
+            )
 
             startActivity(intent)
         }
@@ -161,10 +163,9 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-    fun savePreferences(){
-        sharedPreferences.edit().putBoolean("isLoggedIn",true).apply()
+    fun savePreferences() {
+        sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
     }
-
 
 
 }
