@@ -12,7 +12,7 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="don_t_have_an_account_sign_up_now">Don\'t have an account? Sign up now</string>
     <string name="foodrunner">FoodRunner!</string>
-    <string name="name_min_3_charactes">Name (Min 3 charactes)</string>
+    <string name="name_min_3_characters">Name (Min 3 charactes)</string>
     <string name="delivery_address">Delivery Address</string>
     <string name="password_min_4_characters">Password (Min 4 characters)</string>
     <string name="confirm_password">Confirm Password</string>
@@ -43,4 +43,8 @@
     <string name="ok">OK</string>
     <string name="list_item">list item</string>
     <string name="rs_200_person">Rs.200/Person</string>
+    <string name="enter_otp_received_on_email">Enter OTP received on Email</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_password1">Confirm password</string>
+    <string name="password_min_4_characters1">Password (min 4 characters)</string>
 </resources>

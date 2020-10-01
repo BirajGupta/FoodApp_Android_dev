@@ -22,38 +22,51 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="25dp"/>
-
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etMobileNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imgLogo"
-            android:textSize="15sp"
-            android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="#ffffff"
-            android:padding="10dp"
+            android:layout_marginLeft="20dp"
             android:hint="@string/mobile_number"
             android:inputType="phone"
             android:maxLength="10"
-            />
+            android:layout_below="@id/imgLogo"
+            android:background="#ffffff">
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:padding="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:background="#ffffff"
-            android:padding="10dp"
-            android:inputType="numberPassword"
-            android:layout_below="@id/etMobileNumber"
-            android:layout_marginTop="15dp"
             android:hint="@string/password"
-            android:maxLength="15"
-            android:textSize="15sp"/>
+            android:inputType="numberPassword"
+            android:maxLength="10"
+            android:layout_below="@id/etMobileNumber"
+            android:background="#ffffff"
+            android:layout_marginTop="15dp">
 
-        <Button
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:padding="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,6 +101,8 @@
             android:text="@string/don_t_have_an_account_sign_up_now"
             android:layout_margin="15dp"
             android:textColor="#ffffff"/>
+
+
 
     </RelativeLayout>
 
