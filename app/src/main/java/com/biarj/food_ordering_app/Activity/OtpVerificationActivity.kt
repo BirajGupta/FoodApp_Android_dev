@@ -11,25 +11,18 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.biarj.food_ordering_app.R
+import com.google.android.material.button.MaterialButton
 import kotlinx.android.synthetic.main.activity_otp_verification.*
 import org.json.JSONException
 import org.json.JSONObject
 
 class OtpVerificationActivity : AppCompatActivity() {
 
-    lateinit var etOtp : EditText
-    lateinit var etNewPassword : EditText
-    lateinit var etConfirmNewPassword  : EditText
-    lateinit var btnSubmit : Button
+    lateinit var btnSubmit : MaterialButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_otp_verification)
-
-        etOtp = findViewById(R.id.etOtp)
-        etNewPassword = findViewById(R.id.etNewPassword)
-        etConfirmNewPassword = findViewById(R.id.etConfirmNewPassword)
-        btnSubmit = findViewById(R.id.btnSubmit)
 
         val mobileNumber = intent.getStringExtra("mobileNumber")
         println(mobileNumber)

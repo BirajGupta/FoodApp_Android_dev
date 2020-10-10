@@ -13,18 +13,14 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.biarj.food_ordering_app.R
+import com.google.android.material.button.MaterialButton
+import kotlinx.android.synthetic.main.activity_registration.*
 import org.json.JSONException
 import org.json.JSONObject
 
 class Registration : AppCompatActivity() {
 
-    lateinit var etRegistrationName: EditText
-    lateinit var etRegistrationEmail :EditText
-    lateinit var etRegistrationNumber : EditText
-    lateinit var etRegistrationAddress : EditText
-    lateinit var etRegistrationPassword : EditText
-    lateinit var etRegistrationConfirmPassword : EditText
-    lateinit var btnRegister : Button
+    lateinit var btnRegister : MaterialButton
     lateinit var sharedPreferences : SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,12 +31,6 @@ class Registration : AppCompatActivity() {
 
         setContentView(R.layout.activity_registration)
 
-        etRegistrationName = findViewById(R.id.etRegistrationName)
-        etRegistrationEmail = findViewById(R.id.etRegistrationEmail)
-        etRegistrationNumber = findViewById(R.id.etRegistrationNumber)
-        etRegistrationAddress = findViewById(R.id.etRegistrationAddress)
-        etRegistrationPassword = findViewById(R.id.etRegistrationPassword)
-        etRegistrationConfirmPassword = findViewById(R.id.etRegistrationConfirmPassword)
         btnRegister = findViewById(R.id.btnRegister)
 
         val queue = Volley.newRequestQueue(this@Registration)

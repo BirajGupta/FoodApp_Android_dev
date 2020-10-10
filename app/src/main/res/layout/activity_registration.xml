@@ -8,89 +8,138 @@
     tools:context=".Activity.Registration"
     android:background="#4c8c4a">
 
-    <EditText
-        android:id="@+id/etRegistrationName"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etRegistrationNameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:padding="10dp"
-        android:background="#ffffff"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
         android:minLines="3"
-        android:hint="@string/name_min_3_charactes"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:background="#ffffff">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:hint="@string/name_min_3_characters"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/etRegistrationEmailLayout"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:inputType="textEmailAddress"
+    android:background="#ffffff">
+
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etRegistrationEmail"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:textSize="15sp"
         android:padding="10dp"
-        android:background="#ffffff"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_height="wrap_content"
         android:hint="@string/email_address"
-        android:inputType="textEmailAddress"/>
+        />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/etRegistrationNumber"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etRegistrationNumberLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:textSize="15sp"
-        android:padding="10dp"
-        android:background="#ffffff"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
         android:layout_height="wrap_content"
-        android:hint="@string/mobile_number_10_digits"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
         android:inputType="phone"
-        android:maxLength="10"/>
+        android:maxLength="10"
+        android:background="#ffffff">
 
-    <EditText
-        android:id="@+id/etRegistrationAddress"
-        android:layout_width="match_parent"
-        android:textSize="15sp"
-        android:padding="10dp"
-        android:background="#ffffff"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/delivery_address"
-        android:inputType="text"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:hint="@string/mobile_number_10_digits"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/etRegistrationPassword"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etRegistrationAddressLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:padding="10dp"
-        android:background="#ffffff"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:background="#ffffff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:hint="@string/delivery_address"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etRegistrationPasswordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
         android:minEms="4"
-        android:hint="Password (min 4 characters)"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:background="#ffffff">
 
-    <EditText
-        android:id="@+id/etRegistrationConfirmPassword"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:hint="@string/password_min_4_characters1"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etRegistrationConfirmPasswordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:textSize="15sp"
-        android:padding="10dp"
-        android:background="#ffffff"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
         android:layout_height="wrap_content"
-        android:hint="@string/confirm_password"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
         android:minEms="4"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:background="#ffffff">
 
-    <Button
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRegistrationConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:hint="@string/confirm_password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -101,7 +150,6 @@
         android:textAllCaps="false"
         android:background="#ff6f00"
         android:textColor="#ffffff"/>
-
 
 
 </LinearLayout>
